@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PetroSync — Gestão integrada de manutenção e monitoramento de ativos</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+</head>
+<body class="bg-dark text-light">
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top border-bottom border-secondary">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#top">
+      <span class="badge bg-success rounded-circle p-1 me-1">&nbsp;</span>
+      PetroSync
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+        <li class="nav-item"><a class="nav-link" href="#solucao">Solução</a></li>
+        <li class="nav-item"><a class="nav-link" href="#modulos">Módulos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#tecnologia">Tecnologia</a></li>
+        <li class="nav-item"><a class="nav-link" href="#escopo">Escopo</a></li>
+        <li class="nav-item"><a class="nav-link" href="#equipe">Nossa equipe</a></li>
+        <li class="nav-item ms-lg-2">
+          <a class="btn btn-warning fw-semibold" href="#contato">Falar com o time</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="py-5 border-bottom border-secondary" id="top">
+  <div class="container py-5">
+    <div class="row align-items-center gy-5">
+      <div class="col-lg-6">
+        <span class="badge bg-secondary bg-opacity-25 text-warning border border-warning mb-3">
+          MANUTENÇÃO PREDITIVA · REFINO DE PETRÓLEO
+        </span>
+        <h1 class="display-5 fw-bold mb-4">Uma torre de controle para a manutenção da sua planta</h1>
+        <p class="lead text-light-emphasis">
+          O PetroSync centraliza dados de sensores IoT e sistemas SCADA, aplica ciência de dados para
+          prever falhas antes que elas parem a operação, e entrega tudo em dashboards que qualquer
+          engenheiro de manutenção entende de cara.
+        </p>
+        <div class="d-flex flex-wrap gap-3 mt-4">
+          <a href="#solucao" class="btn btn-warning btn-lg fw-semibold">Ver como funciona</a>
+          <a href="#equipe" class="btn btn-outline-light btn-lg">Conheça a equipe</a>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="card bg-black border-secondary">
+          <div class="card-body p-4">
+            <p class="text-secondary small text-uppercase mb-3">Fluxo de dados — do sensor ao alerta</p>
+
+            <div class="row g-2 text-center align-items-center mb-2">
+              <div class="col">
+                <div class="card bg-secondary bg-opacity-10 border-secondary h-100">
+                  <div class="card-body p-2">
+                    <div class="text-secondary small">CAMPO</div>
+                    <div class="fw-semibold small">Sensores IoT / SCADA</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-auto text-warning">
+                <i class="bi bi-arrow-right fs-4"></i>
+              </div>
+              <div class="col">
+                <div class="card bg-secondary bg-opacity-10 border-secondary h-100">
+                  <div class="card-body p-2">
+                    <div class="text-secondary small">PROTOCOLO</div>
+                    <div class="fw-semibold small">OPC UA / MQTT</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-auto text-warning">
+                <i class="bi bi-arrow-right fs-4"></i>
+              </div>
+              <div class="col">
+                <div class="card bg-secondary bg-opacity-10 border-secondary h-100">
+                  <div class="card-body p-2">
+                    <div class="text-secondary small">NUVEM</div>
+                    <div class="fw-semibold small">Ingestão + Séries temporais</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row g-2 text-center align-items-center">
+              <div class="col">
+                <div class="card bg-secondary bg-opacity-10 border-secondary h-100">
+                  <div class="card-body p-2">
+                    <div class="text-secondary small">ANÁLISE</div>
+                    <div class="fw-semibold small">Detecção de anomalias</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-auto text-warning">
+                <i class="bi bi-arrow-right fs-4"></i>
+              </div>
+              <div class="col">
+                <div class="card bg-secondary bg-opacity-10 border-secondary h-100">
+                  <div class="card-body p-2">
+                    <div class="text-secondary small">DECISÃO</div>
+                    <div class="fw-semibold small">Alertas + Ordens de serviço</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-auto text-warning">
+                <i class="bi bi-arrow-right fs-4"></i>
+              </div>
+              <div class="col">
+                <div class="card bg-secondary bg-opacity-10 border-secondary h-100">
+                  <div class="card-body p-2">
+                    <div class="text-secondary small">OPERADOR</div>
+                    <div class="fw-semibold small">Dashboard web</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <hr class="border-secondary">
+            <p class="text-secondary small mb-0">
+              O módulo de Realidade Aumentada consome a mesma API, como camada opcional de
+              visualização em campo.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- SOLUÇÃO -->
+<section class="py-5 border-bottom border-secondary" id="solucao">
+  <div class="container py-4">
+    <p class="text-warning text-uppercase small mb-1">A solução</p>
+    <h2 class="fw-bold mb-3">TI e Automação Industrial, na mesma plataforma</h2>
+    <p class="text-light-emphasis mb-5" style="max-width: 700px;">
+      O PetroSync nasceu para resolver um problema específico: dados de planta que ficam presos em
+      sistemas SCADA isolados, sem virar decisão de manutenção a tempo. A plataforma faz essa ponte
+      sem exigir a troca dos sistemas já instalados.
+    </p>
+
+    <div class="row g-0 border border-secondary rounded overflow-hidden mb-5 text-center">
+      <div class="col-6 col-md-3 border-end border-secondary p-4">
+        <div class="fs-3 fw-bold text-warning">MTBF</div>
+        <div class="text-secondary small mt-1">Tempo médio entre falhas, calculado por ativo</div>
+      </div>
+      <div class="col-6 col-md-3 border-end border-secondary p-4">
+        <div class="fs-3 fw-bold text-warning">MTTR</div>
+        <div class="text-secondary small mt-1">Tempo médio de reparo por ordem de serviço</div>
+      </div>
+      <div class="col-6 col-md-3 border-end border-secondary p-4">
+        <div class="fs-3 fw-bold text-warning">FMEA</div>
+        <div class="text-secondary small mt-1">Priorização de falhas assistida por dados</div>
+      </div>
+      <div class="col-6 col-md-3 p-4">
+        <div class="fs-3 fw-bold text-warning">24/7</div>
+        <div class="text-secondary small mt-1">Monitoramento contínuo com alertas automáticos</div>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-4">
+        <i class="bi bi-diagram-3 text-warning fs-3"></i>
+        <h5 class="mt-3">Integração sem substituição</h5>
+        <p class="text-secondary small">Conecta com SCADA e sensores existentes via OPC UA e MQTT. Nenhum sistema legado precisa sair do lugar.</p>
+      </div>
+      <div class="col-md-4">
+        <i class="bi bi-graph-up-arrow text-warning fs-3"></i>
+        <h5 class="mt-3">Manutenção antes da falha</h5>
+        <p class="text-secondary small">Modelos de ciência de dados identificam desvios de temperatura, pressão e vibração antes de virarem parada não planejada.</p>
+      </div>
+      <div class="col-md-4">
+        <i class="bi bi-display text-warning fs-3"></i>
+        <h5 class="mt-3">Um dashboard, três perfis</h5>
+        <p class="text-secondary small">Operador, engenheiro e gestor enxergam o mesmo dado com o nível de detalhe certo para cada função.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MÓDULOS -->
+<section class="py-5 border-bottom border-secondary" id="modulos">
+  <div class="container py-4">
+    <p class="text-warning text-uppercase small mb-1">Escopo funcional</p>
+    <h2 class="fw-bold mb-3">Seis módulos, um só sistema</h2>
+    <p class="text-light-emphasis mb-4" style="max-width: 700px;">
+      Cinco módulos formam o núcleo obrigatório da plataforma. A Realidade Aumentada é entregável
+      adicional — não trava a entrega principal.
+    </p>
+
+    <div class="accordion" id="modulosAccordion">
+
+      <div class="accordion-item bg-dark border-secondary text-light">
+        <h2 class="accordion-header">
+          <button class="accordion-button bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#m1">
+            <span class="badge bg-success me-3">Obrigatório</span> 01 · Backend e integração de dados
+          </button>
+        </h2>
+        <div id="m1" class="accordion-collapse collapse show" data-bs-parent="#modulosAccordion">
+          <div class="accordion-body text-secondary">
+            <p>API para ingestão, tratamento e disponibilização dos dados, com controle de acesso por perfil de usuário.</p>
+            <ul>
+              <li>Conectores OPC UA (SCADA) e MQTT (sensores IoT)</li>
+              <li>Persistência de séries temporais e dados relacionais de ativos</li>
+              <li>Motor de regras para alertas de desvio operacional</li>
+              <li>Gestão de ativos, ordens de serviço e histórico de manutenção</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item bg-dark border-secondary text-light">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#m2">
+            <span class="badge bg-success me-3">Obrigatório</span> 02 · Dashboard web
+          </button>
+        </h2>
+        <div id="m2" class="accordion-collapse collapse" data-bs-parent="#modulosAccordion">
+          <div class="accordion-body text-secondary">
+            <p>Aplicação web responsiva para monitoramento em tempo real e gestão de manutenção.</p>
+            <ul>
+              <li>Gráficos de tendência, status de equipamentos e mapa de ativos</li>
+              <li>Painel de alertas e notificações</li>
+              <li>Relatórios gerenciais com integração ao Power BI</li>
+              <li>Interface de gestão de ordens de manutenção</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item bg-dark border-secondary text-light">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#m3">
+            <span class="badge bg-success me-3">Obrigatório</span> 03 · Computação em nuvem
+          </button>
+        </h2>
+        <div id="m3" class="accordion-collapse collapse" data-bs-parent="#modulosAccordion">
+          <div class="accordion-body text-secondary">
+            <p>Hospedagem escalável com serviços gerenciados e entrega contínua.</p>
+            <ul>
+              <li>Banco de dados, mensageria e armazenamento gerenciados (AWS, Azure ou GCP)</li>
+              <li>Escalabilidade automática para picos de eventos IoT/SCADA</li>
+              <li>Pipeline de CI/CD para deploy contínuo</li>
+              <li>Observabilidade: logs, métricas e saúde da aplicação</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item bg-dark border-secondary text-light">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#m4">
+            <span class="badge bg-success me-3">Obrigatório</span> 04 · Ciência de dados
+          </button>
+        </h2>
+        <div id="m4" class="accordion-collapse collapse" data-bs-parent="#modulosAccordion">
+          <div class="accordion-body text-secondary">
+            <p>Modelos preditivos e indicadores de confiabilidade a partir do histórico de sensores.</p>
+            <ul>
+              <li>Análise exploratória e detecção de anomalias</li>
+              <li>FMEA assistido por dados: criticidade e frequência de falhas</li>
+              <li>KPIs de confiabilidade: MTBF, MTTR, disponibilidade</li>
+              <li>Python, pandas, scikit-learn, Jupyter e Power BI</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item bg-dark border-secondary text-light">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#m5">
+            <span class="badge bg-success me-3">Obrigatório</span> 05 · Automação industrial / TA
+          </button>
+        </h2>
+        <div id="m5" class="accordion-collapse collapse" data-bs-parent="#modulosAccordion">
+          <div class="accordion-body text-secondary">
+            <p>A camada que conversa com o chão de fábrica, validada em ambiente simulado.</p>
+            <ul>
+              <li>Integração via OPC UA e MQTT com SCADA e sensores IoT</li>
+              <li>Gêmeo digital simplificado para testes e validação, sem planta real</li>
+              <li>Documentação da arquitetura de comunicação entre TA e TI</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item bg-dark border-secondary text-light">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#m6">
+            <span class="badge bg-warning text-dark me-3">Opcional</span> 06 · Realidade Aumentada
+          </button>
+        </h2>
+        <div id="m6" class="accordion-collapse collapse" data-bs-parent="#modulosAccordion">
+          <div class="accordion-body text-secondary">
+            <p>Camada de visualização em campo, construída sobre a mesma API do núcleo — sem criar dependência. Condicionada a tempo/recursos disponíveis da equipe.</p>
+            <ul>
+              <li>Reconhecimento de equipamento via marcador ou visão computacional (Unity 3D + ARFoundation/Vuforia)</li>
+              <li>Exibição de dados operacionais em tempo real sobre o equipamento identificado</li>
+              <li>Testes de usabilidade (SUS) e avaliação ergonômica (ISO 9241 / NR-17)</li>
+              <li>MVP em tablet/smartphone; validação em smart glasses é etapa estendida, não obrigatória</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TECNOLOGIA -->
+<section class="py-5 border-bottom border-secondary" id="tecnologia">
+  <div class="container py-4">
+    <p class="text-warning text-uppercase small mb-1">Stack técnica</p>
+    <h2 class="fw-bold mb-3">Tecnologia escolhida para o contexto, não pela moda</h2>
+    <p class="text-light-emphasis mb-4" style="max-width: 700px;">
+      Ferramentas maduras, amplamente documentadas e adequadas ao porte de um projeto integrador de
+      TI — sem exigir hardware especializado para a entrega principal.
+    </p>
+
+    <div class="table-responsive">
+      <table class="table table-dark table-hover align-middle border border-secondary">
+        <thead>
+          <tr>
+            <th>Camada</th>
+            <th>Tecnologias sugeridas</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="fw-semibold">Frontend</td>
+            <td class="text-secondary">React, Vue ou Angular + biblioteca de gráficos (Recharts / D3)</td>
+          </tr>
+          <tr>
+            <td class="fw-semibold">Backend</td>
+            <td class="text-secondary">Node.js, Python (FastAPI/Django) ou Java (Spring Boot)</td>
+          </tr>
+          <tr>
+            <td class="fw-semibold">Banco de dados</td>
+            <td class="text-secondary">PostgreSQL (relacional) + InfluxDB/TimescaleDB (séries temporais)</td>
+          </tr>
+          <tr>
+            <td class="fw-semibold">Integração TA</td>
+            <td class="text-secondary">OPC UA, MQTT — broker Mosquitto ou EMQX</td>
+          </tr>
+          <tr>
+            <td class="fw-semibold">Nuvem</td>
+            <td class="text-secondary">AWS, Azure ou GCP — serviços gerenciados de banco de dados, mensageria e containers</td>
+          </tr>
+          <tr>
+            <td class="fw-semibold">Ciência de dados</td>
+            <td class="text-secondary">Python (pandas, scikit-learn), Jupyter, Power BI</td>
+          </tr>
+          <tr>
+            <td class="fw-semibold">RA (opcional)</td>
+            <td class="text-secondary">Unity 3D, ARFoundation, Vuforia</td>
+          </tr>
+          <tr>
+            <td class="fw-semibold">DevOps</td>
+            <td class="text-secondary">Docker, CI/CD via GitHub Actions ou GitLab CI</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ESCOPO -->
+<section class="py-5 border-bottom border-secondary" id="escopo">
+  <div class="container py-4">
+    <p class="text-warning text-uppercase small mb-1">Limites do projeto</p>
+    <h2 class="fw-bold mb-3">O que entra e o que fica de fora</h2>
+    <p class="text-light-emphasis mb-4" style="max-width: 700px;">
+      Clareza de escopo evita retrabalho. O PetroSync é dimensionado para um projeto integrador
+      acadêmico de TI — não para substituir infraestrutura industrial existente.
+    </p>
+
+    <div class="row g-4 mb-5">
+      <div class="col-md-6">
+        <div class="card bg-dark border-success h-100 border-start border-4">
+          <div class="card-body">
+            <h6 class="text-success text-uppercase small mb-3">No escopo</h6>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item bg-dark text-secondary"><i class="bi bi-check2 text-success me-2"></i>Integração com dados simulados ou históricos de SCADA/IoT</li>
+              <li class="list-group-item bg-dark text-secondary"><i class="bi bi-check2 text-success me-2"></i>Gêmeo digital simplificado em ambiente controlado</li>
+              <li class="list-group-item bg-dark text-secondary"><i class="bi bi-check2 text-success me-2"></i>Modelos de detecção de anomalia e manutenção preditiva</li>
+              <li class="list-group-item bg-dark text-secondary"><i class="bi bi-check2 text-success me-2"></i>Dashboard web hospedado em ambiente cloud</li>
+              <li class="list-group-item bg-dark text-secondary"><i class="bi bi-check2 text-success me-2"></i>Documentação da arquitetura TI + TA</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card bg-dark border-secondary h-100 border-start border-4">
+          <div class="card-body">
+            <h6 class="text-secondary text-uppercase small mb-3">Fora do escopo</h6>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item bg-dark text-secondary"><i class="bi bi-x text-secondary me-2"></i>Testes em ambiente real de planta operante</li>
+              <li class="list-group-item bg-dark text-secondary"><i class="bi bi-x text-secondary me-2"></i>Aquisição e configuração de hardware físico de sensores</li>
+              <li class="list-group-item bg-dark text-secondary"><i class="bi bi-x text-secondary me-2"></i>Certificação ou homologação de segurança industrial (SIL, ATEX)</li>
+              <li class="list-group-item bg-dark text-secondary"><i class="bi bi-x text-secondary me-2"></i>Substituição de sistemas SCADA legados</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="text-warning text-uppercase small mb-3">Riscos e restrições</p>
+    <div class="list-group">
+      <div class="list-group-item bg-dark text-secondary border-secondary">
+        <i class="bi bi-exclamation-triangle text-warning me-2"></i>Projeto permanece em fase teórica/exploratória, sem testes em planta real.
+      </div>
+      <div class="list-group-item bg-dark text-secondary border-secondary">
+        <i class="bi bi-exclamation-triangle text-warning me-2"></i>Validação da integração depende da disponibilidade de dados reais, simulados ou históricos de sensores/SCADA.
+      </div>
+      <div class="list-group-item bg-dark text-secondary border-secondary">
+        <i class="bi bi-exclamation-triangle text-warning me-2"></i>Equipe pode precisar de capacitação em protocolos industriais (OPC UA/MQTT) caso não haja domínio prévio.
+      </div>
+      <div class="list-group-item bg-dark text-secondary border-secondary">
+        <i class="bi bi-exclamation-triangle text-warning me-2"></i>Sistemas legados podem exigir adaptadores ou middlewares específicos para integração.
+      </div>
+      <div class="list-group-item bg-dark text-secondary border-secondary">
+        <i class="bi bi-exclamation-triangle text-warning me-2"></i>O módulo de Realidade Aumentada está sujeito a corte total caso o cronograma do núcleo não seja cumprido.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ENTREGÁVEIS -->
+<section class="py-5 border-bottom border-secondary">
+  <div class="container py-4">
+    <p class="text-warning text-uppercase small mb-1">Entregáveis</p>
+    <h2 class="fw-bold mb-4">O que sai da porta no fim do projeto</h2>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4">
+        <div class="card bg-dark border-secondary h-100">
+          <div class="card-body">
+            <span class="text-warning small">01</span>
+            <p class="text-secondary mb-0 mt-2">Documento de arquitetura da solução, cobrindo TI e TA.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card bg-dark border-secondary h-100">
+          <div class="card-body">
+            <span class="text-warning small">02</span>
+            <p class="text-secondary mb-0 mt-2">Aplicação backend com API funcional integrando dados simulados de OPC UA/MQTT.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card bg-dark border-secondary h-100">
+          <div class="card-body">
+            <span class="text-warning small">03</span>
+            <p class="text-secondary mb-0 mt-2">Dashboard web funcional, hospedado em ambiente cloud.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card bg-dark border-secondary h-100">
+          <div class="card-body">
+            <span class="text-warning small">04</span>
+            <p class="text-secondary mb-0 mt-2">Pipeline de ciência de dados com ao menos um modelo de detecção de anomalia ou manutenção preditiva.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card bg-dark border-secondary h-100">
+          <div class="card-body">
+            <span class="text-warning small">05</span>
+            <p class="text-secondary mb-0 mt-2">Relatório de KPIs de confiabilidade: MTBF, MTTR e disponibilidade de ativos.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card bg-dark border-secondary h-100">
+          <div class="card-body">
+            <span class="text-warning small">06</span>
+            <p class="text-secondary mb-0 mt-2">Documentação técnica e manual de uso. Protótipo de RA, se o cronograma permitir.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EQUIPE -->
+<section class="py-5 border-bottom border-secondary" id="equipe">
+  <div class="container py-4">
+    <p class="text-warning text-uppercase small mb-1">Conheça nossa equipe</p>
+    <h2 class="fw-bold mb-3">Quem está construindo o PetroSync</h2>
+    <p class="text-light-emphasis mb-5" style="max-width: 700px;">
+      Um time pequeno, organizado pelas mesmas camadas do sistema que constrói: dados de campo,
+      nuvem, ciência de dados e experiência do operador.
+    </p>
+
+    <div class="row g-4">
+      <div class="col-sm-6 col-lg-3">
+        <div class="card bg-dark border-secondary h-100 text-center">
+          <div class="card-body">
+            <div class="rounded-circle bg-secondary bg-opacity-25 border border-secondary mx-auto d-flex align-items-center justify-content-center mb-3" style="width:80px;height:80px;">
+              <span class="fs-4 fw-bold text-warning">AC</span>
+            </div>
+            <h5 class="mb-1">Ana Carolina Reis</h5>
+            <p class="text-warning small mb-3">Líder técnica &amp; Backend</p>
+            <p class="text-secondary small">Responsável pela arquitetura da API e pela integração com os protocolos industriais OPC UA e MQTT.</p>
+            <span class="badge bg-secondary bg-opacity-25 border border-secondary me-1">API</span>
+            <span class="badge bg-secondary bg-opacity-25 border border-secondary me-1">OPC UA</span>
+            <span class="badge bg-secondary bg-opacity-25 border border-secondary">MQTT</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-3">
+        <div class="card bg-dark border-secondary h-100 text-center">
+          <div class="card-body">
+            <div class="rounded-circle bg-secondary bg-opacity-25 border border-secondary mx-auto d-flex align-items-center justify-content-center mb-3" style="width:80px;height:80px;">
+              <span class="fs-4 fw-bold text-warning">RM</span>
+            </div>
+            <h5 class="mb-1">Rafael Monteiro</h5>
+            <p class="text-warning small mb-3">Engenharia de nuvem &amp; DevOps</p>
+            <p class="text-secondary small">Cuida da infraestrutura cloud, do pipeline de CI/CD e da observabilidade da plataforma em produção.</p>
+            <span class="badge bg-secondary bg-opacity-25 border border-secondary me-1">AWS/Azure</span>
+            <span class="badge bg-secondary bg-opacity-25 border border-secondary me-1">CI/CD</span>
+            <span class="badge bg-secondary bg-opacity-25 border border-secondary">Docker</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-3">
+        <div class="card bg-dark border-secondary h-100 text-center">
+          <div class="card-body">
+            <div class="rounded-circle bg-secondary bg-opacity-25 border border-secondary mx-auto d-flex align-items-center justify-content-center mb-3" style="width:80px;height:80px;">
+              <span class="fs-4 fw-bold text-warning">JS</span>
+            </div>
+            <h5 class="mb-1">Juliana Santos</h5>
+            <p class="text-warning small mb-3">Ciência de dados</p>
+            <p class="text-secondary small">Desenvolve os modelos de detecção de anomalias e os indicadores de confiabilidade MTBF e MTTR.</p>
+            <span class="badge bg-secondary bg-opacity-25 border border-secondary me-1">Python</span>
+            <span class="badge bg-secondary bg-opacity-25 border border-secondary me-1">scikit-learn</span>
+            <span class="badge bg-secondary bg-opacity-25 border border-secondary">FMEA</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-3">
+        <div class="card bg-dark border-secondary h-100 text-center">
+          <div class="card-body">
+            <div class="rounded-circle bg-secondary bg-opacity-25 border border-secondary mx-auto d-flex align-items-center justify-content-center mb-3" style="width:80px;height:80px;">
+              <span class="fs-4 fw-bold text-warning">PL</span>
+            </div>
+            <h5 class="mb-1">Pedro Lacerda</h5>
+            <p class="text-warning small mb-3">Frontend &amp; Experiência</p>
+            <p class="text-secondary small">Projeta os dashboards operacionais e o módulo opcional de Realidade Aumentada para uso em campo.</p>
+            <span class="badge bg-secondary bg-opacity-25 border border-secondary me-1">React</span>
+            <span class="badge bg-secondary bg-opacity-25 border border-secondary me-1">Dashboards</span>
+            <span class="badge bg-secondary bg-opacity-25 border border-secondary">RA</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="py-5 bg-black" id="contato">
+  <div class="container py-3">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-8">
+        <p class="text-warning text-uppercase small mb-1">Próximo passo</p>
+        <h2 class="fw-bold mb-2">Vamos apresentar o PetroSync para sua equipe</h2>
+        <p class="text-secondary mb-0">
+          Preparamos uma demonstração do fluxo completo — da ingestão de dados via OPC UA/MQTT
+          até o alerta de manutenção preditiva no dashboard.
+        </p>
+      </div>
+      <div class="col-lg-4 text-lg-end">
+        <a href="mailto:contato@petrosync.dev" class="btn btn-warning btn-lg fw-semibold">contato@petrosync.dev</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="py-4 bg-black border-top border-secondary">
+  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-2 text-secondary small">
+    <div class="fw-bold text-light">PetroSync</div>
+    <div>Plataforma de gestão de manutenção e monitoramento de ativos — refino de petróleo</div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
