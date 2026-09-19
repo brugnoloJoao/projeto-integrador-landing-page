@@ -6,6 +6,7 @@
 <title>PetroSync — Gestão integrada de manutenção e monitoramento de ativos</title>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<link href="./css/style.css" rel="stylesheet">
 </head>
 <body class="bg-dark text-light">
 
@@ -35,7 +36,7 @@
 </nav>
 
 <!-- HERO -->
-<header class="py-5 border-bottom border-secondary" id="top">
+<header class="py-5 border-bottom border-secondary" id="top" style="background: linear-gradient(180deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.9) 100%), url('./img/plataforma-de-petroleo.avif') bottom center/cover no-repeat;">
   <div class="container py-5">
     <div class="row align-items-center gy-5">
       <div class="col-lg-6">
@@ -53,17 +54,41 @@
           <a href="#equipe" class="btn btn-outline-light btn-lg">Conheça a equipe</a>
         </div>
       </div>
-      <div class="col-lg-6">
+    </div>
+  </div>
+</header>
+
+<!-- SOLUÇÃO -->
+<section class="py-5 border-bottom border-secondary bg-dark-1" id="solucao">
+  <div class="container py-4">
+    
+    <!-- Linha 1: Texto na Esquerda e Fluxo na Direita -->
+    <div class="row align-items-center gy-4 mb-5">
+      
+      <!-- Texto da Esquerda (col-lg-5) -->
+      <div class="col-lg-5">
+        <p class="text-warning text-uppercase small mb-1">A solução</p>
+        <h2 class="fw-bold mb-3">TI e Automação Industrial, na mesma plataforma</h2>
+        <p class="text-light-emphasis mb-0">
+          O PetroSync nasceu para resolver um problema específico: dados de planta que ficam presos em
+          sistemas SCADA isolados, sem virar decisão de manutenção a tempo. A plataforma faz essa ponte
+          sem exigir a troca dos sistemas já instalados.
+        </p>
+      </div>
+
+      <!-- Card do Fluxo de Dados na Direita (col-lg-7) -->
+      <div class="col-lg-7">
         <div class="card bg-black border-secondary">
           <div class="card-body p-4">
-            <p class="text-secondary small text-uppercase mb-3">Fluxo de dados — do sensor ao alerta</p>
+            <p class="text-secondary small text-uppercase mb-3 text-warning">Fluxo de dados — do sensor ao alerta</p>
 
+            <!-- Linha 1 do Fluxo -->
             <div class="row g-2 text-center align-items-center mb-2">
               <div class="col">
                 <div class="card bg-secondary bg-opacity-10 border-secondary h-100">
                   <div class="card-body p-2">
-                    <div class="text-secondary small">CAMPO</div>
-                    <div class="fw-semibold small">Sensores IoT / SCADA</div>
+                    <div class="small text-warning">CAMPO</div>
+                    <div class="fw-semibold small text-white">Sensores IoT / SCADA</div>
                   </div>
                 </div>
               </div>
@@ -73,8 +98,8 @@
               <div class="col">
                 <div class="card bg-secondary bg-opacity-10 border-secondary h-100">
                   <div class="card-body p-2">
-                    <div class="text-secondary small">PROTOCOLO</div>
-                    <div class="fw-semibold small">OPC UA / MQTT</div>
+                    <div class="small text-warning">PROTOCOLO</div>
+                    <div class="fw-semibold small text-white">OPC UA / MQTT</div>
                   </div>
                 </div>
               </div>
@@ -84,19 +109,20 @@
               <div class="col">
                 <div class="card bg-secondary bg-opacity-10 border-secondary h-100">
                   <div class="card-body p-2">
-                    <div class="text-secondary small">NUVEM</div>
-                    <div class="fw-semibold small">Ingestão + Séries temporais</div>
+                    <div class="small text-warning">NUVEM</div>
+                    <div class="fw-semibold small text-white">Ingestão + Séries temporais</div>
                   </div>
                 </div>
               </div>
             </div>
 
+            <!-- Linha 2 do Fluxo -->
             <div class="row g-2 text-center align-items-center">
               <div class="col">
                 <div class="card bg-secondary bg-opacity-10 border-secondary h-100">
                   <div class="card-body p-2">
-                    <div class="text-secondary small">ANÁLISE</div>
-                    <div class="fw-semibold small">Detecção de anomalias</div>
+                    <div class="small text-warning">ANÁLISE</div>
+                    <div class="fw-semibold small text-white">Detecção de anomalias</div>
                   </div>
                 </div>
               </div>
@@ -106,8 +132,8 @@
               <div class="col">
                 <div class="card bg-secondary bg-opacity-10 border-secondary h-100">
                   <div class="card-body p-2">
-                    <div class="text-secondary small">DECISÃO</div>
-                    <div class="fw-semibold small">Alertas + Ordens de serviço</div>
+                    <div class="small text-warning">DECISÃO</div>
+                    <div class="fw-semibold small text-white">Alertas + Ordens de serviço</div>
                   </div>
                 </div>
               </div>
@@ -117,8 +143,8 @@
               <div class="col">
                 <div class="card bg-secondary bg-opacity-10 border-secondary h-100">
                   <div class="card-body p-2">
-                    <div class="text-secondary small">OPERADOR</div>
-                    <div class="fw-semibold small">Dashboard web</div>
+                    <div class="small text-warning">OPERADOR</div>
+                    <div class="fw-semibold small text-white">Dashboard web</div>
                   </div>
                 </div>
               </div>
@@ -126,31 +152,19 @@
 
             <hr class="border-secondary">
             <p class="text-secondary small mb-0">
-              O módulo de Realidade Aumentada consome a mesma API, como camada opcional de
-              visualização em campo.
+              O módulo de Realidade Aumentada consome a mesma API, como camada opcional de visualização em campo.
             </p>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</header>
 
-<!-- SOLUÇÃO -->
-<section class="py-5 border-bottom border-secondary" id="solucao">
-  <div class="container py-4">
-    <p class="text-warning text-uppercase small mb-1">A solução</p>
-    <h2 class="fw-bold mb-3">TI e Automação Industrial, na mesma plataforma</h2>
-    <p class="text-light-emphasis mb-5" style="max-width: 700px;">
-      O PetroSync nasceu para resolver um problema específico: dados de planta que ficam presos em
-      sistemas SCADA isolados, sem virar decisão de manutenção a tempo. A plataforma faz essa ponte
-      sem exigir a troca dos sistemas já instalados.
-    </p>
+    </div> <!-- Fim da row principal -->
 
-    <div class="row g-0 border border-secondary rounded overflow-hidden mb-5 text-center">
+    <!-- Linha dos Indicadores MTBF, MTTR, etc. -->
+    <div class="row g-0 border border-secondary rounded overflow-hidden mb-5 text-center bg-black bg-opacity-90">
       <div class="col-6 col-md-3 border-end border-secondary p-4">
         <div class="fs-3 fw-bold text-warning">MTBF</div>
-        <div class="text-secondary small mt-1">Tempo médio entre falhas, calculado por ativo</div>
+        <div class="text-secondary small mt-1">Tempo médio entre falhas, calculated por ativo</div>
       </div>
       <div class="col-6 col-md-3 border-end border-secondary p-4">
         <div class="fs-3 fw-bold text-warning">MTTR</div>
@@ -166,6 +180,7 @@
       </div>
     </div>
 
+    <!-- Linha dos 3 Pilares -->
     <div class="row g-4">
       <div class="col-md-4">
         <i class="bi bi-diagram-3 text-warning fs-3"></i>
@@ -183,11 +198,12 @@
         <p class="text-secondary small">Operador, engenheiro e gestor enxergam o mesmo dado com o nível de detalhe certo para cada função.</p>
       </div>
     </div>
-  </div>
+
+  </div> <!-- Fim do container -->
 </section>
 
 <!-- MÓDULOS -->
-<section class="py-5 border-bottom border-secondary" id="modulos">
+<section class="py-5 border-bottom border-secondary bg-dark-2" id="modulos">
   <div class="container py-4">
     <p class="text-warning text-uppercase small mb-1">Escopo funcional</p>
     <h2 class="fw-bold mb-3">Seis módulos, um só sistema</h2>
@@ -316,7 +332,7 @@
 </section>
 
 <!-- TECNOLOGIA -->
-<section class="py-5 border-bottom border-secondary" id="tecnologia">
+<section class="py-5 border-bottom border-secondary bg-dark-1" id="tecnologia">
   <div class="container py-4">
     <p class="text-warning text-uppercase small mb-1">Stack técnica</p>
     <h2 class="fw-bold mb-3">Tecnologia escolhida para o contexto, não pela moda</h2>
@@ -373,7 +389,7 @@
 </section>
 
 <!-- ESCOPO -->
-<section class="py-5 border-bottom border-secondary" id="escopo">
+<section class="py-5 border-bottom border-secondary bg-dark-2" id="escopo">
   <div class="container py-4">
     <p class="text-warning text-uppercase small mb-1">Limites do projeto</p>
     <h2 class="fw-bold mb-3">O que entra e o que fica de fora</h2>
@@ -434,7 +450,7 @@
 </section>
 
 <!-- ENTREGÁVEIS -->
-<section class="py-5 border-bottom border-secondary">
+<section class="py-5 border-bottom border-secondary bg-dark-1">
   <div class="container py-4">
     <p class="text-warning text-uppercase small mb-1">Entregáveis</p>
     <h2 class="fw-bold mb-4">O que sai da porta no fim do projeto</h2>
@@ -492,7 +508,7 @@
 </section>
 
 <!-- EQUIPE -->
-<section class="py-5 border-bottom border-secondary" id="equipe">
+<section class="py-5 border-bottom border-secondary bg-dark-2" id="equipe">
   <div class="container py-4">
     <p class="text-warning text-uppercase small mb-1">Conheça nossa equipe</p>
     <h2 class="fw-bold mb-3">Quem está construindo o PetroSync</h2>
@@ -570,7 +586,7 @@
 </section>
 
 <!-- CTA -->
-<section class="py-5 bg-black" id="contato">
+<section class="py-5 bg-black bg-dark-1" id="contato">
   <div class="container py-3">
     <div class="row align-items-center g-4">
       <div class="col-lg-8">
