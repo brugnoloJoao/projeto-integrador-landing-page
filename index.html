@@ -56,13 +56,13 @@
         <div class="row align-items-center gy-5">
           <div class="col-lg-6">
             <span class="badge bg-secondary bg-opacity-25 text-warning border border-warning mb-3">
-              MANUTENÇÃO PREDITIVA · REFINO DE PETRÓLEO
+              MANUTENÇÃO · REFINO DE PETRÓLEO
             </span>
             <h1 class="display-5 fw-bold mb-4" id="hero-titulo">Uma torre de controle para a manutenção da sua planta
             </h1>
             <p class="lead text-light-emphasis">
               O PetroSync centraliza dados de sensores IoT e sistemas SCADA, aplica ciência de dados para
-              prever falhas antes que elas parem a operação, e entrega tudo em dashboards que qualquer
+              notificar falhas antes que elas parem a operação, e entrega tudo em dashboards que qualquer
               engenheiro de manutenção entende de cara.
             </p>
             <div class="d-flex flex-wrap gap-3 mt-4">
@@ -87,8 +87,7 @@
             <h2 class="fw-bold mb-3" id="solucao-titulo">TI e Automação Industrial, na mesma plataforma</h2>
             <p class="text-light-emphasis mb-0">
               O PetroSync nasceu para resolver um problema específico: dados de planta que ficam presos em
-              sistemas SCADA isolados, sem virar decisão de manutenção a tempo. A plataforma faz essa ponte
-              sem exigir a troca dos sistemas já instalados.
+              sistemas SCADA isolados, sem virar decisão de manutenção a tempo. A plataforma surge com a ideia de fazer essa ponte.
             </p>
           </div>
 
@@ -192,23 +191,17 @@
         <!-- Linha dos Indicadores MTBF, MTTR, etc. -->
         <div class="row g-0 border border-secondary rounded overflow-hidden mb-5 text-center bg-black bg-opacity-90"
           role="list" aria-label="Indicadores de confiabilidade">
-          <div class="col-6 col-md-3 border-end border-secondary p-4" role="listitem">
+          <div class="col-6 col-md-4 border-end border-secondary p-4" role="listitem">
             <div class="fs-3 fw-bold text-warning"><abbr title="Mean Time Between Failures — tempo médio entre falhas"
                 class="text-decoration-none">MTBF</abbr></div>
             <div class="text-secondary small mt-1">Tempo médio entre falhas, calculado por ativo</div>
           </div>
-          <div class="col-6 col-md-3 border-end border-secondary p-4" role="listitem">
+          <div class="col-6 col-md-4 border-end border-secondary p-4" role="listitem">
             <div class="fs-3 fw-bold text-warning"><abbr title="Mean Time To Repair — tempo médio de reparo"
                 class="text-decoration-none">MTTR</abbr></div>
             <div class="text-secondary small mt-1">Tempo médio de reparo por ordem de serviço</div>
           </div>
-          <div class="col-6 col-md-3 border-end border-secondary p-4" role="listitem">
-            <div class="fs-3 fw-bold text-warning"><abbr
-                title="Failure Mode and Effects Analysis — análise de modos e efeitos de falha"
-                class="text-decoration-none">FMEA</abbr></div>
-            <div class="text-secondary small mt-1">Priorização de falhas assistida por dados</div>
-          </div>
-          <div class="col-6 col-md-3 p-4" role="listitem">
+          <div class="col-6 col-md-4 p-4" role="listitem">
             <div class="fs-3 fw-bold text-warning"><span aria-label="24 horas por dia, 7 dias por semana">24/7</span>
             </div>
             <div class="text-secondary small mt-1">Monitoramento contínuo com alertas automáticos</div>
@@ -219,15 +212,14 @@
         <div class="row g-4">
           <div class="col-md-4">
             <i class="bi bi-diagram-3 text-warning fs-3" aria-hidden="true"></i>
-            <h3 class="h5 mt-3">Integração sem substituição</h3>
-            <p class="text-secondary small">Conecta com SCADA e sensores existentes via OPC UA e MQTT. Nenhum sistema
-              legado precisa sair do lugar.</p>
+            <h3 class="h5 mt-3">Integração</h3>
+            <p class="text-secondary small">Conecta com SCADA e sensores existentes via OPC UA e MQTT.</p>
           </div>
           <div class="col-md-4">
             <i class="bi bi-graph-up-arrow text-warning fs-3" aria-hidden="true"></i>
             <h3 class="h5 mt-3">Manutenção antes da falha</h3>
             <p class="text-secondary small">Modelos de ciência de dados identificam desvios de temperatura, pressão e
-              vibração antes de virarem parada não planejada.</p>
+              vibração para evitar uma parada não planejada.</p>
           </div>
           <div class="col-md-4">
             <i class="bi bi-display text-warning fs-3" aria-hidden="true"></i>
@@ -286,7 +278,7 @@
               <div class="accordion-body text-secondary">
                 <p>Aplicação web responsiva para monitoramento em tempo real e gestão de manutenção.</p>
                 <ul>
-                  <li>Gráficos de tendência, status de equipamentos e mapa de ativos</li>
+                  <li>Gráficos de tendência, status de equipamentos e tabela de ativos</li>
                   <li>Painel de alertas e notificações</li>
                   <li>Relatórios gerenciais com integração ao Power BI</li>
                   <li>Interface de gestão de ordens de manutenção</li>
@@ -329,7 +321,6 @@
                 <p>Modelos preditivos e indicadores de confiabilidade a partir do histórico de sensores.</p>
                 <ul>
                   <li>Análise exploratória e detecção de anomalias</li>
-                  <li>FMEA assistido por dados: criticidade e frequência de falhas</li>
                   <li>KPIs de confiabilidade: MTBF, MTTR, disponibilidade</li>
                   <li>Python, pandas, scikit-learn, Jupyter e Power BI</li>
                 </ul>
@@ -350,7 +341,7 @@
                 <p>A camada que conversa com o chão de fábrica, validada em ambiente simulado.</p>
                 <ul>
                   <li>Integração via OPC UA e MQTT com SCADA e sensores IoT</li>
-                  <li>Gêmeo digital simplificado para testes e validação, sem planta real</li>
+                  <li>Simulação do ambiente de planta para testes e validação, sem planta real</li>
                   <li>Documentação da arquitetura de comunicação entre TA e TI</li>
                 </ul>
               </div>
@@ -391,7 +382,7 @@
         <p class="text-warning text-uppercase small mb-1">Stack técnica</p>
         <h2 class="fw-bold mb-3" id="tecnologia-titulo">Tecnologia escolhida para o contexto, não pela moda</h2>
         <p class="text-light-emphasis mb-4" style="max-width: 700px;">
-          Ferramentas maduras, amplamente documentadas e adequadas ao porte de um projeto integrador de
+          Ferramentas consolidadas, amplamente documentadas e adequadas ao porte de um projeto integrador de
           TI — sem exigir hardware especializado para a entrega principal.
         </p>
 
@@ -411,15 +402,15 @@
               </tr>
               <tr>
                 <th scope="row" class="fw-semibold">Backend</th>
-                <td class="text-secondary">Node.js, Python (FastAPI/Django) ou Java (Spring Boot)</td>
+                <td class="text-secondary"> Python, C# ou Java (Spring Boot)</td>
               </tr>
               <tr>
                 <th scope="row" class="fw-semibold">Banco de dados</th>
-                <td class="text-secondary">PostgreSQL (relacional) + InfluxDB/TimescaleDB (séries temporais)</td>
+                <td class="text-secondary">PostgreSQL (relacional) + Azure CosmosDB, AWS DynamoDB oiu Cloud Firestore  (não relacional)</td>
               </tr>
               <tr>
                 <th scope="row" class="fw-semibold">Integração TA</th>
-                <td class="text-secondary">OPC UA, MQTT — broker Mosquitto ou EMQX</td>
+                <td class="text-secondary">OPC UA, MQTT</td>
               </tr>
               <tr>
                 <th scope="row" class="fw-semibold">Nuvem</th>
@@ -428,15 +419,11 @@
               </tr>
               <tr>
                 <th scope="row" class="fw-semibold">Ciência de dados</th>
-                <td class="text-secondary">Python (pandas, scikit-learn), Jupyter, Power BI</td>
+                <td class="text-secondary">Python (pandas, scikit-learn)</td>
               </tr>
               <tr>
                 <th scope="row" class="fw-semibold">RA (opcional)</th>
                 <td class="text-secondary">Unity 3D, ARFoundation, Vuforia</td>
-              </tr>
-              <tr>
-                <th scope="row" class="fw-semibold">DevOps</th>
-                <td class="text-secondary">Docker, CI/CD via GitHub Actions ou GitLab CI</td>
               </tr>
             </tbody>
           </table>
@@ -463,7 +450,7 @@
                   <li class="list-group-item bg-dark text-secondary"><i class="bi bi-check2 text-success me-2"
                       aria-hidden="true"></i>Integração com dados simulados ou históricos de SCADA/IoT</li>
                   <li class="list-group-item bg-dark text-secondary"><i class="bi bi-check2 text-success me-2"
-                      aria-hidden="true"></i>Gêmeo digital simplificado em ambiente controlado</li>
+                      aria-hidden="true"></i>Simulação do ambiente de planta para testes e validação</li>
                   <li class="list-group-item bg-dark text-secondary"><i class="bi bi-check2 text-success me-2"
                       aria-hidden="true"></i>Modelos de detecção de anomalia e manutenção preditiva</li>
                   <li class="list-group-item bg-dark text-secondary"><i class="bi bi-check2 text-success me-2"
@@ -482,12 +469,12 @@
                   <li class="list-group-item bg-dark text-secondary"><i class="bi bi-x text-danger me-2"
                       aria-hidden="true"></i>Testes em ambiente real de planta operante</li>
                   <li class="list-group-item bg-dark text-secondary"><i class="bi bi-x text-danger me-2"
-                      aria-hidden="true"></i>Aquisição e configuração de hardware físico de sensores</li>
+                      aria-hidden="true"></i>Aquisição e configuração de hardware físico de sensores industriais</li>
                   <li class="list-group-item bg-dark text-secondary"><i class="bi bi-x text-danger me-2"
                       aria-hidden="true"></i>Certificação ou homologação de segurança industrial (SIL, ATEX)</li>
                   <li class="list-group-item bg-dark text-secondary"><i class="bi bi-x text-danger me-2"
                       aria-hidden="true"></i>Substituição de sistemas SCADA legados</li>
-                </ul>
+                </ul> 
               </div>
             </div>
           </div>
@@ -587,7 +574,7 @@
                       class="w-100 h-100 object-fit-cover">
                   </div>
                   <h4 class="h5 mb-1 text-light">João Brugnolo</h4>
-                  <p class="text-warning small mb-3">PO - Product Owner &amp; DEV DevOps</p>
+                  <p class="text-warning small mb-3">PO - Product Owner &amp; DEV</p>
                   <p class="text-secondary small">Responsável por definir prioridades do produto, organizar as demandas
                     e alinhar as necessidades do projeto com a equipe de desenvolvimento.</p>
                 </div>
